@@ -18,7 +18,7 @@ Based on https://github.com/holderl5/docker-hamster
 
 **Autostart:**
 
-Adapt `tomboy-docker.desktop` (avoid shell-vars) and place it in `~/.config/autostart`.
+Adapt `hamster-docker.desktop` (avoid shell-vars) and place it in `~/.config/autostart`.
 
 
 ## TODO
