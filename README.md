@@ -1,6 +1,6 @@
 # docker-hamster
 
-Run legacy hamster time tracker in newer versions of ubuntu (tested with Kubuntu 20.04).
+Run legacy hamster time tracker in newer versions of ubuntu (tested with Ubuntu/Kubuntu 20.04).
 
 Based on https://github.com/holderl5/docker-hamster
 
@@ -18,7 +18,10 @@ Based on https://github.com/holderl5/docker-hamster
 
 **Autostart:**
 
-Adapt `hamster-docker.desktop` (avoid shell-vars) and place it in `~/.config/autostart`.
+Adapt `hamster-docker.desktop` and place it in `~/.config/autostart`:
+
+* replace `[DISPLAY]` with the output of `echo $DISPLAY` (may be ":0" for example)
+* replace `[HOME_DIR]` with the output of `echo $HOME`
 
 
 ## TODO

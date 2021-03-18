@@ -1,8 +1,6 @@
 [Desktop Entry]
-Exec=docker run --rm -e DISPLAY=:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.local/share/hamster-applet:/home/developer/.local/share/hamster-applet -v ~/.gconf/apps/hamster-applet:/home/developer/.gconf/apps/hamster-applet hamster
-Name[de_AT]=Hamster
-Name=Tomboy
-NoDisplay=false
+Exec=docker run --rm -e DISPLAY=[DISPLAY] -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/[HOME_DIR]/.local/share/hamster-applet:/home/developer/.local/share/hamster-applet -v /home/[HOME_DIR]/.gconf/apps/hamster-applet:/home/developer/.gconf/apps/hamster-applet hamster
+Name=Hamster
 StartupNotify=false
 Terminal=false
 Type=Application
